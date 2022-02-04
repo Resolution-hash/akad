@@ -1,25 +1,114 @@
-$Monserat: Monserat,sans-serif;
-$OpenSans: Open Sans,sans-serif;
-$fontColorLight: #60606e;
+$monserat: 'Monserat',sans-serif;
+$openSans: 'Open Sans',sans-serif;
+$mainColor: #60606e;
+$secondColor: #7beec7;
 
 body{
-    font-family: $OpenSans;
-
-    .container{
-        width: 1140px;
-        margin: 0 auto;
-    }
+    font-family: $openSans;
+    color: $mainColor;
+    background: url('/source/assets/images/header-bg.jpg') no-repeat;
+    background-size: 100% 90vh;
+    
 }
 
+.container{
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.section__header{
+    
+}
 
 .header{
     display: flex;
     justify-content: space-between;
+    margin-top:40px;
 
-    & .logo{
-        font-family: $Monserat;
-        font-weight: bold;
-        font-size: 1.5em;
-        color: $fontColorLight;
+    &__title{
+        font-family: $monserat;
+        color: $mainColor;
+        font-size: 24px;
     }
+}
+
+.menu{
+    position: relative;
+    margin-top:5px;
+    cursor: pointer;
+
+    &__item{
+        display: block;
+        content:'';
+        width: 30px;
+        height: 1px;
+        top:4px;
+        background: $mainColor;
+
+    }
+
+    &__item::before{
+        display: block;
+        position: absolute;
+        top:6px;
+        content:'';
+        width: 15px;
+        height: 1px;
+        background: $mainColor;
+
+    }
+
+    &__item::after{
+        display: block;
+        position: absolute;
+        top:12px;
+        content:'';
+        width: 23px;
+        height: 1px;
+        background: $mainColor;
+    }
+}
+
+.center{
+    display: flex;
+    margin:165px 0 125px 0;
+    justify-content: center;
+    font-family: $monserat;
+    position: relative;
+    
+    
+    &__wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        width: 555px;
+    }
+
+    &__title{
+        white-space: nowrap;
+        font-weight: bold;
+        font-size: 50px;
+        padding:20px 30px;
+        border: 10px solid $mainColor;
+        margin-bottom: 30px;
+    }
+
+    &__title::before{
+        display: block;
+        position: absolute;
+        top:-37px;
+        left: 514px;
+        content:'WE`RE';
+        font-size: 20px;
+        font-weight: bold;
+        padding: 10px 20px 7px 20px;
+        background: $secondColor;
+    }
+
+    &__text{
+        font-family: $openSans;
+        font-size: 16px;
+        text-align: center;
+    }
+
+
 }

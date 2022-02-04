@@ -1,7 +1,11 @@
 body {
-  font-family: Open Sans, sans-serif;
+  font-family: "Open Sans", sans-serif;
+  color: #60606e;
+  background: url("/source/assets/images/header-bg.jpg") no-repeat;
+  background-size: 100% 90vh;
 }
-body .container {
+
+.container {
   width: 1140px;
   margin: 0 auto;
 }
@@ -13,12 +17,88 @@ body .container {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-top: 40px;
 }
-.header .logo {
-  font-family: Monserat, sans-serif;
-  font-weight: bold;
-  font-size: 1.5em;
+.header__title {
+  font-family: "Monserat", sans-serif;
   color: #60606e;
+  font-size: 24px;
+}
+
+.menu {
+  position: relative;
+  margin-top: 5px;
+  cursor: pointer;
+}
+.menu__item {
+  display: block;
+  content: '';
+  width: 30px;
+  height: 1px;
+  top: 4px;
+  background: #60606e;
+}
+.menu__item::before {
+  display: block;
+  position: absolute;
+  top: 6px;
+  content: '';
+  width: 15px;
+  height: 1px;
+  background: #60606e;
+}
+.menu__item::after {
+  display: block;
+  position: absolute;
+  top: 12px;
+  content: '';
+  width: 23px;
+  height: 1px;
+  background: #60606e;
+}
+
+.center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 165px 0 125px 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Monserat", sans-serif;
+  position: relative;
+}
+.center__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 555px;
+}
+.center__title {
+  white-space: nowrap;
+  font-weight: bold;
+  font-size: 50px;
+  padding: 20px 30px;
+  border: 10px solid #60606e;
+  margin-bottom: 30px;
+}
+.center__title::before {
+  display: block;
+  position: absolute;
+  top: -37px;
+  left: 514px;
+  content: 'WE`RE';
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 20px 7px 20px;
+  background: #7beec7;
+}
+.center__text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
