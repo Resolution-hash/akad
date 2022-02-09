@@ -6,7 +6,7 @@ $secondColor: #7beec7;
 body{
     font-family: $openSans;
     color: $mainColor;
-    background: url('source/assets/images/header-bg.jpg') no-repeat;
+    background: url("../images/header-bg.jpg") no-repeat;
     background-size: 100% 90vh;
     
 }
@@ -16,9 +16,9 @@ body{
     margin: 0 auto;
 }
 
-.section__header{
+// .section__header{
     
-}
+// }
 
 .header{
     display: flex;
@@ -108,7 +108,100 @@ body{
         font-family: $openSans;
         font-size: 16px;
         text-align: center;
+        line-height: 1.4;
+    }
+}
+
+.history{
+    display: flex;
+    margin-bottom: 150px;
+    
+
+    &__img{
+        margin-right: 127px;
     }
 
+    &__content{
+        display: flex;
+        font-family: $monserat;
+        flex-direction: column;
+        margin-top: 25px;
+    }
 
+    &__title{
+        font-weight: bold;
+        font-size: 29px;
+        margin-bottom: 20px;
+        position: relative;
+        letter-spacing: 0.03em;
+    }
+
+    &__title::before{
+        display: block;
+        content:'';
+        position: absolute;
+        width: 67px;
+        height: 21px;
+        top:12px;
+        background:$secondColor;
+        z-index:-1;
+    }
+
+    &__text{
+        font-family: $openSans;
+        line-height: 2;
+        letter-spacing: 0.05em;
+        margin-bottom: 50px;
+    }
+
+    &__btn{
+        padding:15px 40px;
+        background:$secondColor;
+        color:#fff;
+        align-self: flex-end;
+        font-weight: bold;
+        font-size:12px;
+        letter-spacing: 0.1em;
+    }
+}
+
+.title__wrapper{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 29px;
+    margin-bottom: 20px;
+    position: relative;
+    letter-spacing: 0.03em;
+
+    &::before{
+        display: block;
+        content:'';
+        position: absolute;
+        width: 67px;
+        height: 21px;
+        top:13px;
+        left: 444px;
+        background:$secondColor;
+        z-index:-1;
+    }
+    &__text{
+        display: flex;
+        flex-wrap: wrap;
+        align-self: center;
+        text-align: center;
+        font-family: $openSans;
+        font-size: 14px;
+        width: 720px;
+        font-weight: normal;
+        line-height: 2;
+    }
+
+    
 }

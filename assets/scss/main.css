@@ -1,4 +1,210 @@
 body {
-  font-family: Monserat, sans-serif; }
+  font-family: "Open Sans", sans-serif;
+  color: #60606e;
+  background: url("../images/header-bg.jpg") no-repeat;
+  background-size: 100% 90vh;
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 40px;
+}
+.header__title {
+  font-family: "Monserat", sans-serif;
+  color: #60606e;
+  font-size: 24px;
+}
+
+.menu {
+  position: relative;
+  margin-top: 5px;
+  cursor: pointer;
+}
+.menu__item {
+  display: block;
+  content: '';
+  width: 30px;
+  height: 1px;
+  top: 4px;
+  background: #60606e;
+}
+.menu__item::before {
+  display: block;
+  position: absolute;
+  top: 6px;
+  content: '';
+  width: 15px;
+  height: 1px;
+  background: #60606e;
+}
+.menu__item::after {
+  display: block;
+  position: absolute;
+  top: 12px;
+  content: '';
+  width: 23px;
+  height: 1px;
+  background: #60606e;
+}
+
+.center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 165px 0 125px 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Monserat", sans-serif;
+  position: relative;
+}
+.center__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 555px;
+}
+.center__title {
+  white-space: nowrap;
+  font-weight: bold;
+  font-size: 50px;
+  padding: 20px 30px;
+  border: 10px solid #60606e;
+  margin-bottom: 30px;
+}
+.center__title::before {
+  display: block;
+  position: absolute;
+  top: -37px;
+  left: 514px;
+  content: 'WE`RE';
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 20px 7px 20px;
+  background: #7beec7;
+}
+.center__text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.history {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 150px;
+}
+.history__img {
+  margin-right: 127px;
+}
+.history__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Monserat", sans-serif;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 25px;
+}
+.history__title {
+  font-weight: bold;
+  font-size: 29px;
+  margin-bottom: 20px;
+  position: relative;
+  letter-spacing: 0.03em;
+}
+.history__title::before {
+  display: block;
+  content: '';
+  position: absolute;
+  width: 67px;
+  height: 21px;
+  top: 12px;
+  background: #7beec7;
+  z-index: -1;
+}
+.history__text {
+  font-family: "Open Sans", sans-serif;
+  line-height: 2;
+  letter-spacing: 0.05em;
+  margin-bottom: 50px;
+}
+.history__btn {
+  padding: 15px 40px;
+  background: #7beec7;
+  color: #fff;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+}
+
+.title__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 100px;
+}
+
+.title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: bold;
+  font-size: 29px;
+  margin-bottom: 20px;
+  position: relative;
+  letter-spacing: 0.03em;
+}
+.title::before {
+  display: block;
+  content: '';
+  position: absolute;
+  width: 67px;
+  height: 21px;
+  top: 13px;
+  left: 444px;
+  background: #7beec7;
+  z-index: -1;
+}
+.title__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-item-align: center;
+      align-self: center;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  width: 720px;
+  font-weight: normal;
+  line-height: 2;
+}
 
 /*# sourceMappingURL=main.css.map */
