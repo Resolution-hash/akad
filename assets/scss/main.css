@@ -1,7 +1,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #60606e;
-  background: url("../images/header-bg.jpg") no-repeat;
+  background: url("../images/header/header-bg.jpg") no-repeat;
   background-size: 100% 90vh;
 }
 
@@ -179,6 +179,7 @@ body {
   margin-bottom: 20px;
   position: relative;
   letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 .title::before {
   display: block;
@@ -205,6 +206,43 @@ body {
   width: 720px;
   font-weight: normal;
   line-height: 2;
+}
+
+.skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 150px;
+}
+.skills__panels {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 320px 320px;
+  grid-template-rows: 245px 245px;
+  grid-row-gap: 20px;
+}
+.skills__img {
+  margin-bottom: 20px;
+}
+.skills__item:first-child .skills__img {
+  margin-top: 10px;
+}
+.skills__item:nth-child(1) .skills__img {
+  margin-bottom: 10px;
+}
+.skills__title {
+  font-family: "Monserat", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+.skills__line {
+  font-size: 14px;
+  margin-bottom: 15px;
+  color: #999999;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,110 +1,113 @@
-$monserat: 'Monserat',sans-serif;
-$openSans: 'Open Sans',sans-serif;
+$monserat: 'Monserat',
+sans-serif;
+$openSans: 'Open Sans',
+sans-serif;
 $mainColor: #60606e;
 $secondColor: #7beec7;
+$grayColor: #999999;
 
-body{
+body {
     font-family: $openSans;
     color: $mainColor;
-    background: url("../images/header-bg.jpg") no-repeat;
+    background: url("../images/header/header-bg.jpg") no-repeat;
     background-size: 100% 90vh;
-    
+
 }
 
-.container{
+.container {
     width: 1140px;
     margin: 0 auto;
 }
 
 // .section__header{
-    
+
 // }
 
-.header{
+.header {
     display: flex;
     justify-content: space-between;
-    margin-top:40px;
+    margin-top: 40px;
 
-    &__title{
+    &__title {
         font-family: $monserat;
         color: $mainColor;
         font-size: 24px;
     }
 }
 
-.menu{
+.menu {
     position: relative;
-    margin-top:5px;
+    margin-top: 5px;
     cursor: pointer;
 
-    &__item{
+    &__item {
         display: block;
-        content:'';
+        content: '';
         width: 30px;
         height: 1px;
-        top:4px;
+        top: 4px;
         background: $mainColor;
 
     }
 
-    &__item::before{
+    &__item::before {
         display: block;
         position: absolute;
-        top:6px;
-        content:'';
+        top: 6px;
+        content: '';
         width: 15px;
         height: 1px;
         background: $mainColor;
 
     }
 
-    &__item::after{
+    &__item::after {
         display: block;
         position: absolute;
-        top:12px;
-        content:'';
+        top: 12px;
+        content: '';
         width: 23px;
         height: 1px;
         background: $mainColor;
     }
 }
 
-.center{
+.center {
     display: flex;
-    margin:165px 0 125px 0;
+    margin: 165px 0 125px 0;
     justify-content: center;
     font-family: $monserat;
     position: relative;
-    
-    
-    &__wrapper{
+
+
+    &__wrapper {
         display: flex;
         flex-wrap: wrap;
         width: 555px;
     }
 
-    &__title{
+    &__title {
         white-space: nowrap;
         font-weight: bold;
         font-size: 50px;
-        padding:20px 30px;
+        padding: 20px 30px;
         border: 10px solid $mainColor;
         margin-bottom: 30px;
     }
 
-    &__title::before{
+    &__title::before {
         display: block;
         position: absolute;
-        top:-37px;
+        top: -37px;
         left: 514px;
-        content:'WE`RE';
+        content: 'WE`RE';
         font-size: 20px;
         font-weight: bold;
         padding: 10px 20px 7px 20px;
         background: $secondColor;
     }
 
-    &__text{
+    &__text {
         font-family: $openSans;
         font-size: 16px;
         text-align: center;
@@ -112,23 +115,23 @@ body{
     }
 }
 
-.history{
+.history {
     display: flex;
     margin-bottom: 150px;
-    
 
-    &__img{
+
+    &__img {
         margin-right: 127px;
     }
 
-    &__content{
+    &__content {
         display: flex;
         font-family: $monserat;
         flex-direction: column;
         margin-top: 25px;
     }
 
-    &__title{
+    &__title {
         font-weight: bold;
         font-size: 29px;
         margin-bottom: 20px;
@@ -136,42 +139,42 @@ body{
         letter-spacing: 0.03em;
     }
 
-    &__title::before{
+    &__title::before {
         display: block;
-        content:'';
+        content: '';
         position: absolute;
         width: 67px;
         height: 21px;
-        top:12px;
-        background:$secondColor;
-        z-index:-1;
+        top: 12px;
+        background: $secondColor;
+        z-index: -1;
     }
 
-    &__text{
+    &__text {
         font-family: $openSans;
         line-height: 2;
         letter-spacing: 0.05em;
         margin-bottom: 50px;
     }
 
-    &__btn{
-        padding:15px 40px;
-        background:$secondColor;
-        color:#fff;
+    &__btn {
+        padding: 15px 40px;
+        background: $secondColor;
+        color: #fff;
         align-self: flex-end;
         font-weight: bold;
-        font-size:12px;
+        font-size: 12px;
         letter-spacing: 0.1em;
     }
 }
 
-.title__wrapper{
+.title__wrapper {
     display: flex;
     flex-direction: column;
     margin-bottom: 100px;
 }
 
-.title{
+.title {
     display: flex;
     justify-content: center;
     font-weight: bold;
@@ -179,19 +182,21 @@ body{
     margin-bottom: 20px;
     position: relative;
     letter-spacing: 0.03em;
+    text-transform: uppercase;
 
-    &::before{
+    &::before {
         display: block;
-        content:'';
+        content: '';
         position: absolute;
         width: 67px;
         height: 21px;
-        top:13px;
+        top: 13px;
         left: 444px;
-        background:$secondColor;
-        z-index:-1;
+        background: $secondColor;
+        z-index: -1;
     }
-    &__text{
+
+    &__text {
         display: flex;
         flex-wrap: wrap;
         align-self: center;
@@ -202,6 +207,44 @@ body{
         font-weight: normal;
         line-height: 2;
     }
+}
 
-    
+.skills {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 150px;
+
+    &__panels {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: 320px 320px;
+        grid-template-rows: 245px 245px;
+        grid-row-gap: 20px;
+    }
+
+    &__img {
+        margin-bottom: 20px;
+    }
+
+    &__item:first-child &__img {
+        margin-top: 10px;
+    }
+
+    &__item:nth-child(1) &__img {
+        margin-bottom: 10px;
+    }
+
+
+    &__title {
+        font-family: $monserat;
+        font-weight: bold;
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+
+    &__line {
+        font-size: 14px;
+        margin-bottom: 15px;
+        color: $grayColor;
+    }
 }
